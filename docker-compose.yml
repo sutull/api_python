@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  api:
+    build: .
+    container_name: api
+    image: api
+    volumes:
+      - ../api_python:/opt/code
+    ports:
+      - "8080:8080"
